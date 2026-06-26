@@ -37,9 +37,9 @@ export default function Hero() {
         ))}
       </div>
       <span className="hero-ball">⚽</span>
-      <div className="hero-tag">Site Educacional Interativo</div>
+<div className="hero-tag">Futebol de verdade</div>
       <h1 className="hero-h">COPA DO<br />MUNDO</h1>
-      <p className="hero-sub">Explore 40 anos de futebol — das mãos de Maradona ao milagre de Messi. Lendas, marcos históricos, quiz e muito mais.</p>
+      <p className="hero-sub">40 anos de futebol — da mão de Maradona ao gol de Messi. As lendas, as histórias e os números que fizeram a Copa.</p>
       <div className="hero-pills">
         <div className="hero-pill"><div className="hp-n"><CountUp end={10} /></div><div className="hp-l">Edições</div></div>
         <div className="hero-pill"><div className="hp-n"><CountUp end={1473} /></div><div className="hp-l">Gols</div></div>

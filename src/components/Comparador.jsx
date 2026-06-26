@@ -35,7 +35,7 @@ export default function Comparador() {
       <div className="wrap">
         <p className="sec-eyebrow reveal">Ferramenta Interativa</p>
         <h2 className="sec-title reveal">COMPARAR COPAS</h2>
-        <p className="sec-desc reveal">Escolha duas edições e analise as estatísticas lado a lado.</p>
+<p className="sec-desc reveal">Escolhe duas edições e bota lado a lado pra decidir qual foi melhor.</p>
         <div className="cmp-selects reveal">
           <select value={idx1} onChange={(e) => setIdx1(+e.target.value)}>
             {CUPS.map((c, i) => (

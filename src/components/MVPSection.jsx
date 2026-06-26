@@ -17,7 +17,7 @@ export default function MVPSection() {
       <div className="wrap">
         <p className="sec-eyebrow reveal">Os Melhores</p>
         <h2 className="sec-title reveal">MELHOR JOGADOR DE CADA COPA</h2>
-        <p className="sec-desc reveal">Quem brilhou em cada edição e levou a Bola de Ouro.</p>
+<p className="sec-desc reveal">Quem botou o time nas costas e levou a Bola de Ouro de cada Copa.</p>
         <div className="mvp-grid">
           {CUPS.map((c, i) => {
             const mvpPlayer = c.players?.[0]
@@ -25,7 +25,7 @@ export default function MVPSection() {
               <div className="mvp-card reveal" key={i}>
                 {mvpPlayer?.img && (
                   <div className="mvp-img">
-                    <img src={mvpPlayer.img} alt={mvpPlayer.name} onError={(e) => { e.target.style.display = 'none' }} />
+<img src={mvpPlayer.img} alt={mvpPlayer.name} loading="lazy" onError={(e) => { e.target.style.display = 'none' }} />
                   </div>
                 )}
                 <div className="mvp-year">{c.year}</div>

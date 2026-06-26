@@ -70,7 +70,7 @@ export default function Stats() {
       <div className="wrap">
         <p className="sec-eyebrow reveal">Números</p>
         <h2 className="sec-title reveal">ESTATÍSTICAS GERAIS</h2>
-        <p className="sec-desc reveal">Os dados das 10 últimas Copas em perspectiva histórica.</p>
+<p className="sec-desc reveal">Os dados das 10 últimas Copas, lado a lado, pra comparar do jeito que a gente gosta.</p>
         <div className="stats-grid">
           <div className="stat-c reveal"><span className="stat-ico">🥅</span><div className="stat-num">1.473</div><div className="stat-lbl">Gols marcados</div><div className="stat-sub">1986 – 2022</div></div>
           <div className="stat-c reveal"><span className="stat-ico">🏆</span><div className="stat-num">16</div><div className="stat-lbl">Gols de Miroslav Klose</div><div className="stat-sub">Recorde histórico</div></div>

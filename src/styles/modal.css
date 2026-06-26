@@ -1,0 +1,39 @@
+.modal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,.85);
+  z-index:300;display:flex;align-items:center;justify-content:center;
+  padding:1.5rem;backdrop-filter:blur(6px);
+}
+.modal{
+  background:#0d1f12;border:1px solid rgba(255,215,0,.15);
+  border-radius:var(--r);width:100%;max-width:520px;
+  max-height:90vh;overflow-y:auto;
+}
+.mo-head{
+  padding:1.5rem;border-bottom:1px solid var(--border);
+  display:flex;align-items:flex-start;gap:1rem;
+}
+.mo-img{
+  width:80px;height:80px;border-radius:50%;flex-shrink:0;
+  overflow:hidden;background:#1a2e1d;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;font-weight:700;color:var(--gold);
+  border:2.5px solid rgba(255,215,0,.4);
+}
+.mo-img img{width:100%;height:100%;object-fit:cover;object-position:top}
+.mo-titles{flex:1}
+.mo-flag{font-size:1.5rem}
+.mo-name{font-size:1.25rem;font-weight:700;margin:.1rem 0}
+.mo-nick{font-size:.82rem;color:var(--gold)}
+.mo-close{
+  background:none;border:none;color:var(--t3);
+  font-size:1.4rem;line-height:1;padding:0;
+  transition:color .2s;
+}
+.mo-close:hover{color:var(--w)}
+.mo-body{padding:1.5rem}
+.mo-bio{font-size:.86rem;color:var(--t2);line-height:1.75;margin-bottom:1.25rem}
+.mo-facts{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+@media(max-width:400px){.mo-facts{grid-template-columns:1fr}}
+.mo-fact{background:rgba(255,255,255,.03);border-radius:var(--r2);padding:.75rem}
+.mo-fact-l{font-size:.62rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.mo-fact-v{font-size:.88rem;color:var(--w);font-weight:500}

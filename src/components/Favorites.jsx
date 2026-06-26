@@ -36,7 +36,7 @@ export default function Favorites({ onPlayerClick }) {
                 {favPlayers.map(p => (
                   <div className="fav-item" key={p.id} onClick={() => { onPlayerClick(p.id); setShow(false) }}>
                     <div className="fav-avatar">
-                      {p.img ? <img src={p.img} alt={p.name} onError={(e) => { e.target.parentElement.textContent = p.name.slice(0, 2).toUpperCase() }} /> : p.name.slice(0, 2).toUpperCase()}
+{p.img ? <img src={p.img} alt={p.name} loading="lazy" onError={(e) => { e.target.parentElement.textContent = p.name.slice(0, 2).toUpperCase() }} /> : p.name.slice(0, 2).toUpperCase()}
                     </div>
                     <div className="fav-info">
                       <div className="fav-name">{p.flag} {p.name}</div>

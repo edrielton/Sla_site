@@ -6,8 +6,8 @@ export default function PlayerModal({ player, onClose }) {
       <div className="modal">
         <div className="mo-head">
           <div className="mo-img">
-            {player.img
-              ? <img src={player.img} alt={player.name} onError={(e) => { e.target.parentElement.textContent = player.name.slice(0, 2).toUpperCase() }} />
+{player.img
+              ? <img src={player.img} alt={player.name} loading="lazy" onError={(e) => { e.target.parentElement.textContent = player.name.slice(0, 2).toUpperCase() }} />
               : player.name.slice(0, 2).toUpperCase()
             }
           </div>

@@ -27,7 +27,7 @@ export default function Records() {
       <div className="wrap">
         <p className="sec-eyebrow reveal">Marcos Históricos</p>
         <h2 className="sec-title reveal">RECORDES DAS COPAS</h2>
-        <p className="sec-desc reveal">Os números mais impressionantes da história do futebol mundial.</p>
+<p className="sec-desc reveal">Os números que ninguém esquece. Recordes que até hoje rendem papo.</p>
         <div className="records-grid">
           {RECORDS.map((r, i) => (
             <div className="record-card reveal" key={i}>

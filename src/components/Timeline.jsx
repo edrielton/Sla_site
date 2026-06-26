@@ -45,7 +45,7 @@ export default function Timeline({ onPlayerClick }) {
       <div className="wrap">
         <p className="sec-eyebrow reveal">Linha do Tempo</p>
         <h2 className="sec-title reveal">40 ANOS DE HISTÓRIA</h2>
-        <p className="sec-desc reveal">Da Copa da Mão de Deus em 1986 até a final épica do Qatar em 2022. Filtre por campeão ou continente.</p>
+<p className="sec-desc reveal">Da mão de Deus em 1986 ao Qatar em 2022. Filtra por campeão ou continente e lembra de cada edição.</p>
         <div className="tl-filters reveal">
           {FILTERS.map(f => (
             <button key={f.type} className={`tf${filter === f.type ? ' on' : ''}`} onClick={() => setFilter(f.type)}>{f.label}</button>
@@ -73,8 +73,8 @@ export default function Timeline({ onPlayerClick }) {
                       {c.players.map((p, pi) => (
                         <div className="pl-chip" key={pi} onClick={() => onPlayerClick(p.id)}>
                           <div className="pl-av">
-                            {p.img
-                              ? <img src={p.img} alt={p.name} onError={(e) => { e.target.parentElement.textContent = p.name.slice(0, 2).toUpperCase() }} />
+{p.img
+                              ? <img src={p.img} alt={p.name} loading="lazy" onError={(e) => { e.target.parentElement.textContent = p.name.slice(0, 2).toUpperCase() }} />
                               : p.name.slice(0, 2).toUpperCase()
                             }
                           </div>

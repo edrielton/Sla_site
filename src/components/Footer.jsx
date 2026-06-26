@@ -18,7 +18,7 @@ export default function Footer() {
         ))}
       </div>
       <span className="ft-logo">⚽ COPA DO MUNDO</span>
-      <p>Site educacional e interativo · Dados históricos das Copas 1986–2022<br />Desenvolvido para fins de estudo e aprendizado.</p>
+<p>Um mergulho nas Copas de 1986 a 2022<br />Feito com paixão por quem ama futebol.</p>
     </footer>
   )
 }

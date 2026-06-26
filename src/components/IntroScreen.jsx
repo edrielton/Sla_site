@@ -67,18 +67,18 @@ export default function IntroScreen({ onComplete }) {
           COPA DO MUNDO
         </div>
         <div className={`intro-divider${step >= 2 ? ' show' : ''}`} />
-        <div className={`intro-line intro-developer${step >= 3 ? ' show' : ''}`}>
-          Desenvolvido por <span className="intro-name">Edrielton</span>
+<div className={`intro-line intro-developer${step >= 3 ? ' show' : ''}`}>
+          Feito por <span className="intro-name">Edrielton</span>
         </div>
         <div className={`intro-line intro-purpose${step >= 3 ? ' show' : ''}`}>
-          Para fins educativos
+          Do torcedor pro torcedor
         </div>
         <div className={`intro-divider small${step >= 4 ? ' show' : ''}`} />
         <div className={`intro-line intro-desc${step >= 4 ? ' show' : ''}`}>
-          Vamos conhecer um pouco mais
+          Vem comigo nessa viagem
         </div>
         <div className={`intro-line intro-desc2${step >= 5 ? ' show' : ''}`}>
-          sobre as <span className="intro-highlight">10 Copas do Mundo</span> anteriores
+          pelas <span className="intro-highlight">10 Copas</span> que marcaram época
         </div>
         <div className={`intro-flags-row${step >= 5 ? ' show' : ''}`}>
           {FLAGS_SVG.slice(0, 6).map((svg, i) => (

@@ -1,21 +1,24 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, lazy, Suspense } from 'react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import Timeline from './components/Timeline'
-import Legends from './components/Legends'
-import Comparador from './components/Comparador'
-import Quiz from './components/Quiz'
-import Stats from './components/Stats'
-import Footer from './components/Footer'
-import PlayerModal from './components/PlayerModal'
+import FunFacts from './components/FunFacts'
+import IntroScreen from './components/IntroScreen'
 import ScrollToTop from './components/ScrollToTop'
 import ThemeToggle from './components/ThemeToggle'
-import FunFacts from './components/FunFacts'
-import MVPSection from './components/MVPSection'
-import Records from './components/Records'
-import Favorites from './components/Favorites'
-import IntroScreen from './components/IntroScreen'
 import { ALL_PLAYERS } from './data'
+
+const Timeline = lazy(() => import('./components/Timeline'))
+const Records = lazy(() => import('./components/Records'))
+const Legends = lazy(() => import('./components/Legends'))
+const MVPSection = lazy(() => import('./components/MVPSection'))
+const Comparador = lazy(() => import('./components/Comparador'))
+const Stats = lazy(() => import('./components/Stats'))
+const Quiz = lazy(() => import('./components/Quiz'))
+const Footer = lazy(() => import('./components/Footer'))
+const PlayerModal = lazy(() => import('./components/PlayerModal'))
+const Favorites = lazy(() => import('./components/Favorites'))
+
+const Fallback = () => <div style={{ minHeight: '40vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--t3)' }}>Carregando…</div>
 
 export default function App() {
   const [introDone, setIntroDone] = useState(false)
@@ -38,18 +41,22 @@ export default function App() {
       <Nav />
       <Hero />
       <FunFacts />
-      <Timeline onPlayerClick={handlePlayerClick} />
-      <Records />
-      <Legends onPlayerClick={handlePlayerClick} />
-      <MVPSection />
-      <Comparador />
-      <Stats />
-      <Quiz />
-      <Footer />
+      <Suspense fallback={<Fallback />}>
+        <Timeline onPlayerClick={handlePlayerClick} />
+        <Records />
+        <Legends onPlayerClick={handlePlayerClick} />
+        <MVPSection />
+        <Comparador />
+        <Stats />
+        <Quiz />
+        <Footer />
+      </Suspense>
       <ScrollToTop />
       <ThemeToggle />
-      <Favorites onPlayerClick={handlePlayerClick} />
-      {selectedPlayer && <PlayerModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
+      <Suspense fallback={null}>
+        <Favorites onPlayerClick={handlePlayerClick} />
+        {selectedPlayer && <PlayerModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
+      </Suspense>
     </>
   )
 }

@@ -1,0 +1,52 @@
+#quiz{background:var(--g0)}
+.quiz-shell{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r);padding:clamp(1.5rem,4vw,2.5rem);
+  max-width:680px;margin:0 auto;
+}
+.qz-prog{display:flex;gap:4px;margin-bottom:1.5rem}
+.qz-dot{height:4px;flex:1;border-radius:2px;background:rgba(255,255,255,.08)}
+.qz-dot.done{background:var(--gold)}
+.qz-dot.cur{background:var(--g4)}
+.qz-num{font-size:.68rem;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.5rem}
+.qz-q{font-size:1.1rem;font-weight:600;line-height:1.55;margin-bottom:1.4rem}
+.qz-opts{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1.25rem}
+@media(max-width:500px){.qz-opts{grid-template-columns:1fr}}
+.qo{
+  padding:.9rem 1rem;background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.1);border-radius:var(--r2);
+  color:var(--t1);font-size:.86rem;text-align:left;
+  transition:all .2s;border-left:3px solid transparent;
+}
+.qo:hover{border-color:var(--gold);background:rgba(255,215,0,.06)}
+.qo.ok{background:rgba(46,158,78,.15);border-color:#4caf50;color:#90e090;pointer-events:none}
+.qo.fail{background:rgba(200,50,50,.15);border-color:#f44336;color:#ffaaaa;pointer-events:none}
+.qo.off{pointer-events:none;opacity:.5}
+.qz-fb{
+  font-size:.84rem;line-height:1.65;padding:.8rem 1rem;
+  border-radius:var(--r2);margin-bottom:1rem;
+}
+.qz-fb.show{display:block}
+.qz-fb.ok{background:rgba(46,158,78,.12);color:#90e090;border-left:3px solid #4caf50}
+.qz-fb.fail{background:rgba(200,50,50,.12);color:#ffaaaa;border-left:3px solid #f44336}
+.qz-next{
+  background:var(--gold);color:#0a0a0a;border:none;
+  border-radius:var(--r2);padding:11px 24px;
+  font-size:.85rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em;
+  display:none;transition:opacity .2s;
+}
+.qz-next.show{display:inline-block}
+.qz-next:hover{opacity:.85}
+.qz-result{text-align:center;display:none}
+.qz-result.show{display:block}
+.qz-big{font-family:'Bebas Neue',sans-serif;font-size:6rem;color:var(--gold);line-height:1}
+.qz-msg{color:var(--t2);margin:.5rem 0 1.5rem;font-size:.95rem}
+.qz-retry{
+  background:transparent;border:1.5px solid var(--gold);
+  color:var(--gold);border-radius:var(--r2);
+  padding:10px 22px;font-size:.84rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.08em;
+  transition:all .2s;
+}
+.qz-retry:hover{background:var(--gold);color:#0a0a0a}

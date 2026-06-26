@@ -24,7 +24,7 @@ export default function Legends({ onPlayerClick }) {
       <div className="wrap">
         <p className="sec-eyebrow reveal">Galeria dos Imortais</p>
         <h2 className="sec-title reveal">LENDAS DO JOGO</h2>
-        <p className="sec-desc reveal">Os jogadores que definiram épocas. Clique em cada lenda para conhecer sua história.</p>
+<p className="sec-desc reveal">Os caras que pararam o mundo. Clica em cada um pra lembrar da história.</p>
         <div className="search-bar reveal">
           <input
             type="text"
@@ -43,8 +43,8 @@ export default function Legends({ onPlayerClick }) {
               <div className="lg-card reveal" key={i} onClick={() => onPlayerClick(null, l)}>
                 <span className="lg-flag">{l.flag}</span>
                 <div className="lg-img-wrap">
-                  {l.img
-                    ? <img src={l.img} alt={l.name} onError={(e) => { e.target.parentElement.textContent = l.name.slice(0, 2).toUpperCase() }} />
+{l.img
+                    ? <img src={l.img} alt={l.name} loading="lazy" onError={(e) => { e.target.parentElement.textContent = l.name.slice(0, 2).toUpperCase() }} />
                     : l.name.slice(0, 2).toUpperCase()
                   }
                 </div>

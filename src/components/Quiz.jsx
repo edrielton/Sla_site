@@ -54,7 +54,7 @@ export default function Quiz() {
       <div className="wrap">
         <p className="sec-eyebrow">Teste seus conhecimentos</p>
         <h2 className="sec-title">QUIZ DA COPA</h2>
-        <p className="sec-desc">10 perguntas sobre as Copas do Mundo. Quanto você sabe?</p>
+<p className="sec-desc">10 perguntas pra ver se você é tão fera quanto pensa.</p>
         <div className="quiz-shell">
           {!showResult ? (
             <div id="qzContent">

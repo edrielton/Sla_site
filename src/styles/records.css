@@ -1,0 +1,22 @@
+.records-section{background:var(--g0)}
+.records-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;
+}
+.record-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r);padding:1.3rem;
+  transition:transform .25s,border-color .25s;
+  position:relative;overflow:hidden;
+}
+.record-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--g3));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.record-card:hover{transform:translateY(-3px);border-color:rgba(255,215,0,.25)}
+.record-card:hover::before{transform:scaleX(1)}
+.record-icon{font-size:1.8rem;margin-bottom:.6rem}
+.record-title{font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem}
+.record-player{font-size:1rem;font-weight:700;margin-bottom:.15rem}
+.record-value{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold);line-height:1;margin-bottom:.2rem}
+.record-detail{font-size:.72rem;color:var(--t3)}

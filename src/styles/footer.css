@@ -1,0 +1,15 @@
+footer{
+  background:var(--g0);border-top:1px solid rgba(255,215,0,.08);
+  padding:3rem 2rem;text-align:center;
+}
+.ft-flags{
+  display:flex;gap:8px;justify-content:center;margin-bottom:1.2rem;
+}
+.ft-flag{
+  width:28px;height:19px;border-radius:2px;
+  box-shadow:0 1px 3px rgba(0,0,0,.4);
+  opacity:.7;transition:opacity .2s,transform .2s;
+}
+.ft-flag:hover{opacity:1;transform:scale(1.2)}
+.ft-logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);letter-spacing:3px;display:block;margin-bottom:.75rem}
+footer p{font-size:.78rem;color:var(--t3);line-height:1.8}
