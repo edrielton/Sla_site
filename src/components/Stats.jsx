@@ -20,10 +20,11 @@ function BarChart({ title, items, color }) {
 export default function Stats() {
   const ref = useRef()
 
-  useEffect(() => {
+useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
+          e.target.classList.add('shown')
           e.target.querySelectorAll('.bar-fill[data-w]').forEach(bar => {
             bar.style.width = bar.dataset.w
           })
@@ -31,7 +32,10 @@ export default function Stats() {
         }
       })
     }, { threshold: 0.2 })
-    if (ref.current) ref.current.querySelectorAll('.ch-wrap').forEach(el => observer.observe(el))
+    if (ref.current) {
+      ref.current.querySelectorAll('.reveal').forEach(el => observer.observe(el))
+      ref.current.querySelectorAll('.ch-wrap').forEach(el => observer.observe(el))
+    }
     return () => observer.disconnect()
   }, [])
 

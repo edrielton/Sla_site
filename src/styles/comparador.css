@@ -1,4 +1,4 @@
-#comparador{background:var(--g1)}
+#comparador{background:var(--g1);padding-bottom:clamp(1.5rem,3vw,2.5rem)}
 .cmp-selects{
   display:grid;grid-template-columns:1fr auto 1fr;
   gap:1rem;align-items:center;margin-bottom:2rem;

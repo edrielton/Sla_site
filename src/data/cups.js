@@ -26,8 +26,8 @@ export const CUPS = [
     mvp: "Salvatore Schillaci",
     extra: "Roger Milla, aos 38 anos, foi a grande revelação marcando 4 gols pela Camarões, que chegou às quartas de final. A Argentina chegou à final sem convencer, sendo expulsa com frequência. As lágrimas de Maradona na despedida marcaram o fim de uma era. Lothar Matthäus jogou a Copa de sua vida.",
     players: [
-      { id: "matthaus", name: "Lothar Matthäus", nick: "O Kaiser Moderno", flag: "🇩🇪", img: "img/matthaus.jpg" },
       { id: "schillaci", name: "Schillaci", nick: "Totò", flag: "🇮🇹", img: "img/schillaci.jpg" },
+      { id: "matthaus", name: "Lothar Matthäus", nick: "O Kaiser Moderno", flag: "🇩🇪", img: "img/matthaus.jpg" },
       { id: "goycochea", name: "Goycochea", nick: "El Gauchito", flag: "🇦🇷", img: "img/goycochea.jpg" }
     ]
   },
@@ -58,8 +58,8 @@ export const CUPS = [
     mvp: "Ronaldo (Brasil)",
     extra: "A Croácia eliminou a Alemanha e chegou ao bronze na sua estreia. Zidane ganhou o apelido 'Zizou' para o mundo inteiro. Dennis Bergkamp marcou um gol antológico contra a Argentina. A Nigéria foi a sensação da fase de grupos. O Brasil venceu 5 jogos com facilidade mas desmoronou na final.",
     players: [
-      { id: "zidane", name: "Zidane", nick: "Zizou", flag: "🇫🇷", img: "img/zidane.jpg" },
       { id: "ronaldo", name: "Ronaldo R9", nick: "O Fenômeno", flag: "🇧🇷", img: "img/ronaldo.jpg" },
+      { id: "zidane", name: "Zidane", nick: "Zizou", flag: "🇫🇷", img: "img/zidane.jpg" },
       { id: "suker", name: "Davor Šuker", nick: "O Goleador Croata", flag: "🇭🇷", img: "img/suker.jpg" }
     ]
   },
@@ -74,9 +74,9 @@ export const CUPS = [
     mvp: "Oliver Kahn",
     extra: "Oliver Kahn foi eleito o Bola de Ouro mesmo sendo vice-campeão — caso único na história. Ronaldinho encantou com sua falta sobre o goleiro Seaman que gerou polêmica. A Coreia do Sul eliminou Portugal, Itália e Espanha de forma polêmica. Ronaldo marcou com um corte de cabelo inusitado que virou meme.",
     players: [
+      { id: "kahn", name: "Oliver Kahn", nick: "O Titã", flag: "🇩🇪", img: "img/kahn.jpg" },
       { id: "ronaldo", name: "Ronaldo R9", nick: "O Fenômeno", flag: "🇧🇷", img: "img/ronaldo-0.jpg" },
-      { id: "ronaldinho", name: "Ronaldinho", nick: "O Bruxo Gaúcho", flag: "🇧🇷", img: "img/ronaldinho.jpg" },
-      { id: "kahn", name: "Oliver Kahn", nick: "O Titã", flag: "🇩🇪", img: "img/kahn.jpg" }
+      { id: "ronaldinho", name: "Ronaldinho", nick: "O Bruxo Gaúcho", flag: "🇧🇷", img: "img/ronaldinho.jpg" }
     ]
   },
   {
@@ -107,6 +107,7 @@ export const CUPS = [
     mvp: "Diego Forlán",
     extra: "Iker Casillas foi eleito o melhor goleiro. O Uruguai chegou ao 4º lugar com Forlán brilhando. A Alemanha jovem de Müller, Özil e Klose chegou ao 3º lugar. A Holanda jogou de forma extremamente dura na final e acabou com 10 jogadores. Wesley Sneijder esteve próximo de conquistar a artilharia.",
     players: [
+      { id: "forlan", name: "Diego Forlán", nick: "El Cacha", flag: "🇺🇾", img: "img/forlan.jpg" },
       { id: "villa", name: "David Villa", nick: "El Guaje", flag: "🇪🇸", img: "img/villa.jpg" },
       { id: "xavi", name: "Xavi Hernández", nick: "O Maestro", flag: "🇪🇸", img: "img/xavi.jpg" },
       { id: "sneijder", name: "Wesley Sneijder", nick: "O Holandês Voador", flag: "🇳🇱", img: "img/sneijder.jpg" }
@@ -140,8 +141,8 @@ export const CUPS = [
     mvp: "Luka Modrić",
     extra: "Mbappé foi o 2º jogador menor de 20 anos a marcar numa final de Copa (depois de Pelé). A Croácia de 4 milhões de habitantes chegou à final. Modrić venceu a Bola de Ouro FIFA naquele ano. Kane marcou quatro gols de pênalti. A Bélgica fez sua melhor Copa chegando ao 3º lugar com De Bruyne e Hazard.",
     players: [
-      { id: "mbappe", name: "Kylian Mbappé", nick: "K-Trap", flag: "🇫🇷", img: "img/mbappe.jpg" },
       { id: "modric", name: "Luka Modrić", nick: "O Maestro Croata", flag: "🇭🇷", img: "img/modric.jpg" },
+      { id: "mbappe", name: "Kylian Mbappé", nick: "K-Trap", flag: "🇫🇷", img: "img/mbappe.jpg" },
       { id: "kane", name: "Harry Kane", nick: "The Captain", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", img: "img/kane.jpg" }
     ]
   },
