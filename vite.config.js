@@ -10,6 +10,5 @@ export default defineConfig({
       'X-Frame-Options': 'DENY',
       'Referrer-Policy': 'strict-origin-when-cross-origin',
     },
-  },
+},
 })
-un 
